@@ -11,9 +11,12 @@ public class SetOfRandomNumbers {
         Methods methods = new Methods();
 
         Random randomGenerator = new Random();
-        for (int i = 0; i < 50; i++) {
-            setOfRandomNumbers.add(randomGenerator.nextInt(1001));
-        }
+            while (setOfRandomNumbers.size() != 50) {
+                setOfRandomNumbers.add(randomGenerator.nextInt(1001));
+            }
+
+        System.out.println("Size of set: ");
+        System.out.println(setOfRandomNumbers.size());
 
         // print set of 50 random numbers in range between 0-1000
         System.out.println("Set of 50 random numbers in range between 0-1000:");
